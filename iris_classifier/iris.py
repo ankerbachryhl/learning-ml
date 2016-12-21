@@ -21,8 +21,7 @@ iris_dataframe = pd.DataFrame(X_train, columns=iris_dataset.feature_names)
 knn = KNeighborsClassifier(n_neighbors=1)
 knn.fit(X_train, y_train)
 
-X_new = np.array([[7, 5.9, 5.1, 6.2]])
-print("X_new.shape: {}".format(X_new.shape))
+X_new = np.array([[2, 1.9, 0.1, 2.2]])
 
 prediction = knn.predict(X_new)
 print("Prediction: {}".format(prediction))
